@@ -1,12 +1,12 @@
 import * as modeling from "@jscad/modeling";
-import { createJustinShape } from "@justinsdk/core";
+import * as roundedCubeLib from "/Libraries/JustinSDK/src/rounded_cube.scad?use";
 
 export function main() {
   return modeling.booleans.union(
-    createJustinShape(),
+    roundedCubeLib.rounded_cube([1.8, 1.2, 0.75], 0.18, true),
     modeling.transforms.translate(
-      [-0.8, -0.8, 0.15],
-      modeling.primitives.cube({ size: 1.0 }),
+      [-0.95, -0.95, 0.2],
+      modeling.primitives.cube({ size: [0.9, 0.9, 0.45] }),
     ),
   );
 }
