@@ -1,5 +1,5 @@
 import * as modeling from "@jscad/modeling";
-import * as roundedCubeLib from "/Libraries/justinsdk/src/rounded_cube.scad?use";
+import * as roundedCubeLib from "@justinsdk/src/rounded_cube.scad?use";
 
 export function main() {
   return modeling.booleans.union(
