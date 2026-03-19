@@ -1,6 +1,6 @@
 {
   "title": "JSCAD + JustinSDK Workbench",
   "entryPath": "/index.js",
-  "linkedLibraries": ["JSCAD Modeling", "JustinSDK"],
+  "linkedLibraries": ["JSCAD Modeling", "justinsdk"],
   "features": ["jscad", "justinsdk", "composition"]
 }

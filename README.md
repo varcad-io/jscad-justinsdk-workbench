@@ -9,4 +9,4 @@ This repository demonstrates:
 Suggested linked libraries:
 
 - `JSCAD Modeling`
-- `JustinSDK`
+- `justinsdk`
