@@ -1,0 +1,89 @@
+[
+  {
+    "type": "Section",
+    "name": "geometry_controls",
+    "label": "Workbench Geometry",
+    "description": "Adjust the JustinSDK base plate and crown before the local workbench pose is applied"
+  },
+  {
+    "name": "hex_radius",
+    "type": "Slider",
+    "description": "Hexagon radius used by the workbench plate",
+    "range": "1.6,6",
+    "defaultValue": "3.2"
+  },
+  {
+    "name": "hex_spacing",
+    "type": "Slider",
+    "description": "Spacing between hex cells in the plate",
+    "range": "0.2,1.8",
+    "defaultValue": "0.8"
+  },
+  {
+    "name": "hex_count",
+    "type": "Number",
+    "description": "Number of concentric hex rings in the plate",
+    "defaultValue": "3"
+  },
+  {
+    "name": "plate_height",
+    "type": "Slider",
+    "description": "Extrusion height of the workbench plate",
+    "range": "1,8",
+    "defaultValue": "3"
+  },
+  {
+    "name": "crown_outer_radius",
+    "type": "Slider",
+    "description": "Outer radius of the JustinSDK starburst crown",
+    "range": "4,18",
+    "defaultValue": "10"
+  },
+  {
+    "name": "crown_inner_radius",
+    "type": "Slider",
+    "description": "Inner radius of the starburst crown",
+    "range": "2,10",
+    "defaultValue": "5"
+  },
+  {
+    "name": "crown_points",
+    "type": "Number",
+    "description": "Point count for the crown profile",
+    "defaultValue": "6"
+  },
+  {
+    "name": "crown_height",
+    "type": "Slider",
+    "description": "Height parameter for the starburst crown",
+    "range": "2,12",
+    "defaultValue": "6"
+  },
+  {
+    "type": "Section",
+    "name": "presentation_controls",
+    "label": "Workbench Pose",
+    "description": "Presentation transforms applied after the workpiece is composed"
+  },
+  {
+    "name": "display_scale",
+    "type": "Slider",
+    "description": "Scale the entire workpiece uniformly",
+    "range": "0.4,1.8",
+    "defaultValue": "1"
+  },
+  {
+    "name": "yaw_deg",
+    "type": "Slider",
+    "description": "Rotate the workpiece around the Z axis",
+    "range": "-180,180",
+    "defaultValue": "10"
+  },
+  {
+    "name": "workbench_offset",
+    "type": "Vector3",
+    "description": "Offset the workpiece in X, Y, and Z",
+    "defaultValue": [-1.2, 0.8, 0],
+    "step": "0.2"
+  }
+]
